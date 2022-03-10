@@ -4,7 +4,7 @@ package com.company.TeamCoding;
 //create variable for energy lvl set to 100
 //loop through int array by var k (jump length) and minus energy by 1 for cumulus clouds and 2 for thunderclouds
 
-public class Jumping_Clouds {
+public class Jumping_Clouds_Revisited {
 
 
     public int jumpingOnClouds(int[] c, int k) {
