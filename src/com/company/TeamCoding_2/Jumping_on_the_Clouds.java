@@ -18,8 +18,6 @@ public class Jumping_on_the_Clouds {
             System.out.println("Position " + pos);
             numOfJumps = numOfJumps + 1;
         }
-
-
         System.out.println("The safe number of jumps is " + numOfJumps);
         return numOfJumps;
     }
