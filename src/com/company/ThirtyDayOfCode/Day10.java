@@ -14,28 +14,23 @@ public class Day10 {
             if(n == 0){
                 System.out.println(0);
             }
+            int global = 0;
+            int local = 0;
             //convert to base2
-            int cont = 1;
-            int num = 1;
             String count = Integer.toBinaryString(n);
-            // System.out.println(count);
             //count consective 1 values
-            for (int i = 0; i < count.length()-1; i++) {
-                if(count.charAt(i) == '1' && count.charAt(i+1) != '0'){
-                    num++;
-                    //System.out.println(true);
-                }else if (num > cont){
-                    cont = num;
-                    num = 1;
-                }else{
-                    num = 1;
+            for (int i = 0; i < count.length(); i++) {
+                if(count.charAt(i) == '1'){
+                    local++;
+                }else if (count.charAt(i) == '0'){
+                    local = 0;
+                }
+                if(local > global){
+                    global = local;
                 }
             }
-
             //sout that number
-            System.out.println(cont);
-
-
+            System.out.println(global);
             bufferedReader.close();
         }
     }
