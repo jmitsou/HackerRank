@@ -12,6 +12,13 @@ public class Day12 {
      */
     // Write your constructor here
 
+    public String firstName;
+    public String lastName;
+    public int id;
+    public int scores;
+
+
+
     /*
      *   Method Name: calculate
      *   @return A character denoting the grade.
